@@ -1,0 +1,38 @@
+<!--My-own index.html without taking any help from the video-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form class="card">
+            <h2 class="heading">Loan Calculator</h2>
+            <br/>
+            <input type="number" class="form-control" id="amt" placeholder="Loan amount" value="">
+            <br/>
+            <input type="number" class="form-control" id="int-rate" placeholder="Interest rate" value="">
+            <br/>
+            <input type="number" class="form-control"  id="years" placeholder="Years to repay" value="">
+            <button class="form-control" id="btn">Calculate</button>
+
+            <!-- LOADER -->
+            <img src="images/loading.gif" alt="" id="loading">
+            
+            <h3 class="results"  id="res-heading">Results</h3>
+            <input type="text" class="form-control results"  id="tot-pay" placeholder="Total payment" disabled>
+            <input type="text" class="form-control results"  id="tot-int" placeholder="Total Interest" disabled>
+            
+        </form>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

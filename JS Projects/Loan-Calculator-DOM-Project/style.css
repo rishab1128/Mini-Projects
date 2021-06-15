@@ -1,0 +1,76 @@
+/* My-own style.css without taking any help from the video*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color:#343a40;
+    font-family:'Poppins', sans-serif;
+}
+
+.container{
+    text-align:center;
+    padding:7px;
+    margin:20px auto;
+}
+
+.card{
+    text-align:center;
+    background-color:white;
+    border:1px solid white;
+    border-radius:5px;
+    width:430px;
+    padding:7px;
+    margin:10px auto;
+    margin-top: 3rem !important;
+    height:19rem;
+}
+
+.heading{
+    /* background-color:transparent; */
+    color:white;
+    font-weight: lighter;
+    margin:5px;
+}
+
+.form-control{
+    float: left;
+    margin:5px;
+    width:404px;
+    padding:8px;
+    color:white;
+    font-weight:bold;
+    border:none;
+    outline:none;
+    border-radius:5px;
+}
+
+.results{
+    display: none;
+}
+
+#btn{
+    margin:10px auto;
+    width:404px;
+    color:white;
+    font-size:16px;
+    padding:5px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#loading{
+    display: none;
+}
+
+#btn:hover{
+    box-shadow: 1px 1px 1px #343a40;
+    background-color:#2d4052;
+}
+
+#res-heading{
+    background-color:transparent;
+}
