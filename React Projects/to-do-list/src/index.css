@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  background-color: rgb(135, 135, 194);
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div{
+  height:100vh;
+}
+
+.center_div{
+  background-color:aliceblue;
+  text-align:center;
+  margin:auto;
+  margin-top:20vh;
+  height:60vh;
+  width:60%;
+  border-radius: 12px;
+  box-shadow:0 13px 13px -7px  rgba(0,0,0,0.1);
+}
+
+.center_div:hover{
+  box-shadow:0px 30px 18px -8px rgba(0,0,0,0.1);
+  /* cursor:pointer; */
+}
+
+.heading{
+  background-color:rgb(77, 147, 207);
+  color:white;
+}
+
+.list{
+  background-color:white;
+  padding:5px;
+  list-style-type:none;
+}
+
+.list:hover{
+  transform: scale(1.01,1.01);
+  cursor: pointer;
+}
+
+.center_div input[type="text"]
+{
+    border:none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width:70%;
+    color:black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.add{
+  background: rgb(77, 147, 207);
+  border: none;
+  color: white;
+  padding: 11px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 5px 4px;
+  border-radius: 50px;
+  cursor:pointer;
+}
+
+.add:hover{
+  /* background:#005da6; */
+  background: #04AA6D
+}
+
+span{
+  float: right;
+}
+
+.del{
+  background: rgb(77, 147, 207);
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+.del:hover{
+  background: rgb(158, 57, 57);
 }
