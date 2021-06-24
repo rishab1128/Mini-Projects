@@ -5,6 +5,7 @@ document.body.addEventListener('keydown',runEvent);
 
 function runEvent(e){
     console.log(e.keyCode);
+    //console.log(e);
 
     //Method-1
     /*for(let i=0; i<audios.length; i++)
