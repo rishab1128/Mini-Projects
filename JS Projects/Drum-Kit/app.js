@@ -2,10 +2,30 @@ const audios=document.getElementsByTagName('audio');
 //console.log(audios[0].dataset.key);
 
 document.body.addEventListener('keydown',runEvent);
+document.body.addEventListener('click',runEvent2);
+
+function runEvent2(e){
+    //console.log(1);
+    if(e.target.className==='key' || e.target.className==='keybd' || e.target.className==='sound')
+    {
+        let keyData=parseInt(e.target.getAttribute('data-key'));
+        //console.log(e.target);
+        //console.log(e.target.getAttribute('data-key'));
+        //console.log(keyData);
+        const audio=document.querySelector(`audio[data-key="${keyData}"]`);
+        const key=document.querySelector(`.key[data-key="${keyData}"]`);
+        key.classList.add('playing');
+
+        if(!audio)
+            return ; 
+        audio.currentTime=0; 
+        audio.play();
+    }
+        
+}
 
 function runEvent(e){
     console.log(e.keyCode);
-    //console.log(e);
 
     //Method-1
     /*for(let i=0; i<audios.length; i++)
@@ -24,9 +44,9 @@ function runEvent(e){
     const key=document.querySelector(`.key[data-key="${e.keyCode}"]`);//Selecting the actual element with class=key which matches with the corresponding keyCode for adding the button animations
 
 
-    console.log(audio);
-    console.log(key);
-    console.log(key.classList);
+    //console.log(audio);
+    //console.log(key);
+    //console.log(key.classList);
 
     //For adding animation -> class='playing gets added in the div(->classList) of that corresponding element when we press the key
     key.classList.add('playing');
