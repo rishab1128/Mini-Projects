@@ -9,7 +9,7 @@ function App() {
   const [srcDoc , setSrcDoc]=useState('');
 
 
-  //To cause a certain delay of 800ms in rendering the HTML , CSS amd JS in the bottom pane
+  //To cause a certain delay of 300ms in rendering the HTML , CSS amd JS in the bottom pane
   
   useEffect(()=>{
 
@@ -21,7 +21,7 @@ function App() {
           <script>${js}</script>
         </html>
       `)
-    } , 800)
+    } , 300)
     
     return ()=> clearTimeout(timeout)
 
