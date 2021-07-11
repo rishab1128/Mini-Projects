@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Mini-Projects/React%20Projects/codepen-clone/static/css/main.e1a04201.chunk.css",
+    "main.js": "/Mini-Projects/React%20Projects/codepen-clone/static/js/main.f65f42b0.chunk.js",
+    "main.js.map": "/Mini-Projects/React%20Projects/codepen-clone/static/js/main.f65f42b0.chunk.js.map",
+    "runtime-main.js": "/Mini-Projects/React%20Projects/codepen-clone/static/js/runtime-main.fe18e9ba.js",
+    "runtime-main.js.map": "/Mini-Projects/React%20Projects/codepen-clone/static/js/runtime-main.fe18e9ba.js.map",
+    "static/css/2.3ceb25c6.chunk.css": "/Mini-Projects/React%20Projects/codepen-clone/static/css/2.3ceb25c6.chunk.css",
+    "static/js/2.17e8151f.chunk.js": "/Mini-Projects/React%20Projects/codepen-clone/static/js/2.17e8151f.chunk.js",
+    "static/js/2.17e8151f.chunk.js.map": "/Mini-Projects/React%20Projects/codepen-clone/static/js/2.17e8151f.chunk.js.map",
+    "index.html": "/Mini-Projects/React%20Projects/codepen-clone/index.html",
+    "static/css/2.3ceb25c6.chunk.css.map": "/Mini-Projects/React%20Projects/codepen-clone/static/css/2.3ceb25c6.chunk.css.map",
+    "static/css/main.e1a04201.chunk.css.map": "/Mini-Projects/React%20Projects/codepen-clone/static/css/main.e1a04201.chunk.css.map",
+    "static/js/2.17e8151f.chunk.js.LICENSE.txt": "/Mini-Projects/React%20Projects/codepen-clone/static/js/2.17e8151f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe18e9ba.js",
+    "static/css/2.3ceb25c6.chunk.css",
+    "static/js/2.17e8151f.chunk.js",
+    "static/css/main.e1a04201.chunk.css",
+    "static/js/main.f65f42b0.chunk.js"
+  ]
+}
