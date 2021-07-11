@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React , {useState, useEffect} from 'react'
 import Editor from './Editor'
 
 function App() {
@@ -6,15 +6,28 @@ function App() {
   const[html , setHtml] = useState('');
   const[css , setCss] = useState('');
   const[js , setJs] = useState('');
+  const [srcDoc , setSrcDoc]=useState('');
 
-  const srcDoc=`
-    <html>
-      <body>${html}</body>
-      <style>${css}</style>
-      <script>${js}</script>
-    </html>
-  `
 
+  //To cause a certain delay of 800ms in rendering the HTML , CSS amd JS in the bottom pane
+  
+  useEffect(()=>{
+
+    const timeout=setTimeout(()=>{
+        setSrcDoc(`
+        <html>
+          <body>${html}</body>
+          <style>${css}</style>
+          <script>${js}</script>
+        </html>
+      `)
+    } , 800)
+    
+    return ()=> clearTimeout(timeout)
+
+  } , [html,css,js])
+
+  
   return (
     <>
       <div className="pane top-pane">
